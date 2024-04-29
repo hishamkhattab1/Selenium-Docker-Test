@@ -13,8 +13,11 @@ import org.testng.annotations.Test;
 public class GoogleTitleTest 
 {
     @Test
-    public void testRun() throws MalformedURLException
-    {
+    public static void main(String[] args) throws MalformedURLException{
+   
+
+    //public void testRun() throws MalformedURLException
+    //{
     URL hubUrl = new URL("http://192.168.9.128:4444/wd/hub");
     // Set up Chrome options (you can customize this further if needed)
     ChromeOptions options = new ChromeOptions();
@@ -39,4 +42,5 @@ public class GoogleTitleTest
     }
     driver.quit();
     }
+//}
 }
